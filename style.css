@@ -7,14 +7,15 @@ body, h1, h2, p, ul, a {
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
-    color: #333;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #f8f9fa;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Container */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -23,23 +24,24 @@ body {
 
 /* Header */
 header {
-    background: #333;
+    background: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 nav a {
@@ -47,11 +49,12 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #00adb5;
+    color: #ffd700;
 }
 
 /* Sections */
@@ -70,10 +73,11 @@ section.visible {
 
 .about, .experience, .contact {
     margin-bottom: 2rem;
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 2rem;
+    color: #fff;
 }
 
 ul {
@@ -82,13 +86,23 @@ ul {
 }
 
 ul li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 h2 {
     margin-bottom: 1rem;
-    color: #007bff;
+    color: #ffd700;
+    font-size: 2rem;
+}
+
+/* Icons */
+i {
+    color: #ffd700;
+    font-size: 1.5rem;
 }
 
 /* Button */
@@ -96,23 +110,24 @@ h2 {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.8rem 1.5rem;
-    background-color: #00adb5;
-    color: white;
+    background-color: #ffd700;
+    color: #4e54c8;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 50px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #007bff;
+    background-color: #ffcc00;
+    transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: rgba(0, 0, 0, 0.9);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
 }
-
